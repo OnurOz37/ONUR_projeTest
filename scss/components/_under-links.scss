@@ -1,0 +1,41 @@
+#hidden-second{
+    display: none;
+}
+#hidden-autor{
+    display: none;
+}
+.link-group{
+    display: flex;
+
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    justify-content: flex-start;
+    align-items: center;
+    
+    img{
+        margin-right: 0.5rem;
+        height: 1rem;
+        width: 1rem;
+        
+    }
+    p{
+        margin-right: 1rem;
+        font-size: 1.4rem;
+    }
+
+    .item-link{
+    
+        text-decoration: none;
+        
+        
+        padding: 0.2rem 1.5rem;
+        margin-right: 0.8rem;
+        border-radius: 1rem;
+        
+    }
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}

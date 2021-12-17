@@ -1,0 +1,42 @@
+
+.main-contents{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 2rem;
+    
+    @media only screen and (max-width:78em){
+        
+        grid-template-columns: repeat(2, 1fr );
+        
+        
+        .content{
+            padding: 4rem;
+            
+        }
+    }
+    @media only screen and (max-width:61.8em){
+        grid-template-columns: repeat(1,1fr );
+
+        .content{
+            padding: 6rem;
+            
+        }
+    }
+
+    .content{
+        margin-top: 5rem;
+        // background-color: #f3eb06;
+        
+        p{
+            text-align: center;
+            padding: 3rem;
+            font-family: 'PT Sans', sans-serif;
+            font-size: 1.5rem;
+            .little-p{
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    
+}

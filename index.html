@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        
+        <div class="main-contents " id="json-data">
+            <div class="content active" id="getdata-one">
+                <p id="data-one">DEVELOPPER/FINANCER/ACCOMPAGNER</p>
+            </div>
+            <div class="content active" id="getdata-two">
+                <p id="data-two">TRANSMETTRE/FORMER</p>
+            </div>
+            <div class="content active" id="getdata-three">
+                <p id="data-three"> ORGANISER (rencontres / séances / ateliers ...)<!--<br> <span class="little-p">
+                
+                </span>--></p>
+            </div>
+            <div class="content active" id="getdata-four">
+                <p id="data-four"> DECOUVRIR (livres / textes / films / archives ...)<!--<br> <span class="little-p">
+                    
+                </span>--></p>
+            </div>
+        </div>
+        <div class="container">
+            <div id="hidden" class="hid">
+                <div class="items">
+                    <div class="first-items" id="category">
+                        <p>VOUS ÊTES: </p>
+                        <ul class="items-list">
+                            <li class="autor-item" >
+                                <a href="#" class="item-link lien autor "  data-filter="autor" id="aut"> AUTEUR</a>
+                            </li>
+                            <li class="pro-item"><a href="#" class="item-link lien productor" data-filter="productor" id="prod">PRODUCTEUR</a>
+                            </li>
+                            <li class="tec-item"><a href="#" class="item-link lien technicien" data-filter="technicien" id="tec">TECHNICIEN</a>
+                            </li>
+                            <li class="beg-item"><a href="#" class="item-link lien beginner" data-filter="beginner" id="beg">DEBUTANT</a>
+                            </li>
+                            <li class="lib-item"><a href="#" class="item-link lien libraryy" data-filter="library" id="lib">LIBRAIRIE</a>
+                            </li>
+                            <li class="edi-item"><a href="#" class="item-link lien editor" data-filter="editor" id="edi">EDITEUR</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="second-items" id="second-category">
+                        <p>VOTRE DOMAINE: </p>
+                        <ul class="items-list__second">
+                            <div class="second-list">
+                                <li class="book-item">
+                                    <a href="#" class="item-link book lien" data-filter="books">LIVRE</a>
+                                </li>
+                                <li class="image-item">
+                                    <a href="#" class="item-link image lien picture" data-filter="pictures">IMAGE</a>
+                                </li>
+                            </div>
+                            
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+    
+            <div class="container">
+                <div id="hidden-second" class="hid-sec">
+                    <div class="under-links" id="u-link">
+                        <ul class="links " id="link-id" >
+                            <li data-genre="Autor, Editor">
+                                <div class="link-group post " data-cat="autor " id="column" >
+                                    <img src="https://img.icons8.com/ios-glyphs/30/000000/play--v1.png" /> <p id="title-1"></p>
+                                <a class="item-link lien autor" href="#">AUTEUR</a>
+                                <a class="item-link lien " href="#">EDITEUR</a>
+                                </div>
+                                
+                            </li>
+                            <li data-genre="Autor, Productor"> 
+                                <div class="link-group post " data-cat="autor"  >
+                                    <img src="https://img.icons8.com/ios-glyphs/30/000000/play--v1.png" /> <p id="title-2"></p>
+                                <a class="item-link lien autor" href="#">AUTEUR</a>
+                                <a class="item-link lien " href="#">PRODUCTEUR</a>
+                                </div>
+                            </li>
+                            <li data-genre="Technicien, Image">
+                                <div class="link-group post" data-cat="technicien" >
+                                    <img src="https://img.icons8.com/ios-glyphs/30/000000/play--v1.png" /> <p id="title-3"></p>
+                                <a class="item-link lien" href="#">TECHNICIEN</a>
+                                <a class="item-link lien picture" href="#">IMAGE</a>
+                                </div>
+                            </li>
+                            <li data-genre="Beginner, Productor">
+                                <div class="link-group post" data-cat="beginner">
+                                    <img src="https://img.icons8.com/ios-glyphs/30/000000/play--v1.png" /> <p id="title-4"></p>
+                                <a class="item-link lien" href="#">DEBUTANT</a>
+                                <a class="item-link lien " href="#">PRODUCTEUR</a>
+                                </div>
+                            </li>
+                            <li data-genre="Productor, Image">
+                                <div class="link-group post" data-cat="productor">
+                                    <img src="https://img.icons8.com/ios-glyphs/30/000000/play--v1.png" /> <p id="title-5"></p>
+                                <a class="item-link lien" href="#">PRODUCTEUR</a>
+                                <a class="item-link lien picture" href="#">IMAGE</a>
+                                </div>
+                            </li>
+                            <li data-genre="Editor, Image">
+                                <div class="link-group post" data-cat="editor">
+                                    <img src="https://img.icons8.com/ios-glyphs/30/000000/play--v1.png" /> <p id="title-6"></p>
+                                <a class="item-link lien" href="#">EDITEUR</a>
+                                <a class="item-link lien picture" href="#">IMAGE</a>
+                                </div>
+                            </li>
+                            <li data-genre="Autor, Image">
+                                <div class="link-group post"  data-cat="autor">
+                                    <img src="https://img.icons8.com/ios-glyphs/30/000000/play--v1.png" /> <p id="title-7"></p>
+                                <a class="item-link lien autor" href="#">AUTEUR</a>
+                                <a class="item-link lien picture" href="#">IMAGE</a>
+                                </div>
+                            </li>
+                            <li data-genre="Autor, Image">
+                                <div class="link-group post" data-cat="autor" >
+                                    <img src="https://img.icons8.com/ios-glyphs/30/000000/play--v1.png" /> <p id="title-8"></p>
+                                <a class="item-link lien autor" href="#">AUTEUR</a>
+                                <a class="item-link lien picture" href="#">IMAGE</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="link-group post" data-cat="autor">
+                                    <img src="https://img.icons8.com/ios-glyphs/30/000000/play--v1.png" /> <p id="title-9"></p>
+                                <a class="item-link lien autor" href="#">AUTEUR</a>
+                                <a class="item-link lien picture" href="#">IMAGE</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="link-group post" data-cat="library">
+                                    <img src="https://img.icons8.com/ios-glyphs/30/000000/play--v1.png" /> <p id="title-10"></p>
+                                <a class="item-link lien" href="#">LIBRAIRIE</a>
+                                <a class="item-link lien picture" href="#">IMAGE</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="link-group post" data-cat="productor">
+                                    <img src="https://img.icons8.com/ios-glyphs/30/000000/play--v1.png" /> <p id="title-11"></p>
+                                <a class="item-link lien" href="#">PRODUCTEUR</a>
+                                <a class="item-link lien picture" href="#">IMAGE</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="link-group post" data-cat="autor">
+                                    <img src="https://img.icons8.com/ios-glyphs/30/000000/play--v1.png" /> <p id="title-12"></p>
+                                <a class="item-link lien autor" href="#">AUTEUR</a>
+                                <a class="item-link lien picture" href="#">IMAGE</a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="link-group post" data-cat="editor">
+                                    <img src="https://img.icons8.com/ios-glyphs/30/000000/play--v1.png" /> <p id="title-13"></p>
+                                <a class="item-link lien" href="#">EDITEUR</a>
+                                <a class="item-link lien picture" href="#">IMAGE</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- <div class="container">
+                <div class="hid-third" id="hidden-autor">
+                    <ul class="autor-list">
+                        <li class="autor-item">
+                            <div class="link-group">
+                                <img src="https://img.icons8.com/ios-glyphs/30/000000/play--v1.png" /> <p>TITRE</p>
+                            <a class="item-link lien" href="#">AUTEUR</a>
+                            <a class="item-link lien" href="#">IMAGE</a>
+                            </div>
+                        </li>
+                        <li class="autor-item">
+                            <div class="link-group">
+                                <img src="https://img.icons8.com/ios-glyphs/30/000000/play--v1.png" /> <p>TITRE</p>
+                            <a class="item-link lien" href="#">AUTEUR</a>
+                            <a class="item-link lien" href="#">IMAGE</a>
+                            </div>
+                        </li>
+                        <li class="autor-item">
+                            <div class="link-group">
+                                <img src="https://img.icons8.com/ios-glyphs/30/000000/play--v1.png" /> <p>TITRE</p>
+                            <a class="item-link lien" href="#">AUTEUR</a>
+                            <a class="item-link lien" href="#">IMAGE</a>
+                            </div>
+                        </li>
+                        <li class="autor-item">
+                            <div class="link-group">
+                                <img src="https://img.icons8.com/ios-glyphs/30/000000/play--v1.png" /> <p>TITRE</p>
+                            <a class="item-link lien" href="#">AUTEUR</a>
+                            <a class="item-link lien" href="#">IMAGE</a>
+                            </div>
+                        </li>
+                        <li class="autor-item">
+                            <div class="link-group">
+                                <img src="https://img.icons8.com/ios-glyphs/30/000000/play--v1.png" /> <p>TITRE</p>
+                            <a class="item-link lien" href="#">AUTEUR</a>
+                            <a class="item-link lien" href="#">IMAGE</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div> -->
+    
+    
+        </div>
+        <table id="liste" >
+            <thead>
+                <tr>
+                
+                    <th class="tab">Name</th>
+                    <th class="tab">Domaines</th>
+                    <th class="tab">Cibles</th>
+                    <th class="tab">Node</th>
+                    
+                </tr>
+            </thead>
+            <tbody id="tableTbody">
+
+            </tbody>
+        </table>
+    </div>
+    
+
+    
+    
+    <script src="scripts/getJson__Names.js"></script>
+    <script src="scripts/getJson__Cibles.js"></script>
+    <script src="scripts/getJson__Productor.js"></script>
+    <script src="scripts/getJson__Technicien.js"></script>
+    <script src="scripts/getJson__Beginner.js"></script>
+    <script src="scripts/getJson__Library.js"></script>
+    <script src="scripts/getJson__Editor.js"></script>
+    <script src="scripts/getJson__Domains.js"></script>
+    <!-- <script src="scripts/getJson_div1.js"></script> -->
+    <script src="scripts/main.js"></script>
+    <script src="scripts/filterJquery.js"></script>
+    
+</body>
+
+</html>

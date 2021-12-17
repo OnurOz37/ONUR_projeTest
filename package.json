@@ -1,0 +1,14 @@
+{
+  "name": "ciclic_vf",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass scss:css --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.45.0"
+  }
+}
